@@ -1,0 +1,1 @@
+$('.side-navs .menu').addClass('collection').find('a').addClass('collection-item');
