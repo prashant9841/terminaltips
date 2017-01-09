@@ -216,124 +216,204 @@ li {
   height: 2px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
+.page {
+  background: #eee;
+}
+
+/* line 43, ../sass/style.scss */
 .page-header {
   background: #ff5555;
-  height: 80px;
+  height: 32vh;
 }
-/* line 42, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .page-header .logo-div {
   float: left;
 }
-/* line 45, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .page-header .logo-div img {
-  width: 80px;
+  width: 20vh;
 }
-/* line 49, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .page-header .logo-div .nav-toggle {
   display: none;
 }
-/* line 54, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .page-header .nav-header ul.menu {
   float: right;
 }
-/* line 56, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .page-header .nav-header ul.menu li {
   display: inline-block;
 }
-/* line 59, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .page-header .nav-header ul.menu li a {
   display: block;
   padding: 10px 15px;
   color: #fff;
   background: #ff5555;
 }
-/* line 65, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .page-header .nav-header ul.menu li a:hover {
   color: #ff5555;
   background: #fff;
 }
-/* line 75, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .page-header .wrap {
   width: 80%;
   margin: 0 auto;
+  padding-top: 3%;
+}
+/* line 86, ../sass/style.scss */
+.page-header .search-div {
+  width: 32%;
+  float: right;
+}
+/* line 91, ../sass/style.scss */
+.page-header .menu-menu-1-container {
+  display: block;
+  width: 50vw;
+  float: right;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 section.banner .wrap {
   width: 86%;
   margin: 0 auto;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
+.page {
+  padding: 50px 0;
+}
+/* line 110, ../sass/style.scss */
 .page .wrap {
   width: 86%;
-  margin: 100px auto;
+  margin: auto;
 }
-/* line 98, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .page .side-navs .collection {
   border: none;
 }
-/* line 101, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .page .side-navs .collection a {
   font-size: 16px;
+  color: #5a5a5a;
 }
-/* line 107, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
+.page .side-navs .collection a:hover {
+  color: #ff5555;
+}
+/* line 130, ../sass/style.scss */
 .page .posts .card {
-  padding-top: 10px;
+  padding: 0;
 }
-/* line 110, ../sass/style.scss */
-.page .posts .card .card-image a {
-  color: #fff;
-  font-size: 36px;
-  font-family: "roboto slab", sans-serif;
-}
-/* line 116, ../sass/style.scss */
-.page .posts .card .card-image .img-wrap {
-  max-height: 350px;
-  overflow: hidden;
-}
-/* line 120, ../sass/style.scss */
-.page .posts .card .card-image span.card-title {
+/* line 133, ../sass/style.scss */
+.page .posts .card span.card-title {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  padding: 25px;
+  font-size: 32px;
 }
-/* line 126, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
+.page .posts .card span.card-title a {
+  color: #5a5a5a;
+}
+/* line 144, ../sass/style.scss */
+.page .posts .card .card-content .img-wrap {
+  width: 25%;
+  float: left;
+}
+/* line 148, ../sass/style.scss */
+.page .posts .card .card-content .img-wrap img {
+  width: 100%;
+}
+/* line 152, ../sass/style.scss */
 .page .posts .card .card-content p {
+  padding-left: 20px;
+  width: 60%;
+  float: left;
   overflow: hidden;
   line-height: 24px;
   text-overflow: ellipsis;
   display: -webkit-box;
-  max-height: 72px;
+  max-height: 144px;
   /* fallback */
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   /* number of lines to show */
   -webkit-box-orient: vertical;
   font-size: 17px;
 }
-/* line 132, ../sass/style.scss */
-.page .posts .card .card-action a {
+/* line 159, ../sass/style.scss */
+.page .posts .card .card-content a {
   float: right;
   padding-bottom: 10px;
   color: #ff5555 !important;
+  margin-top: -40px;
 }
 
-/* line 143, ../sass/style.scss */
-.inside-page .banner {
-  height: 50vh;
-  padding-top: 10px;
+/* line 171, ../sass/style.scss */
+.inside-page .item-details {
+  margin-top: -80px;
+  background: #fff;
+  padding: 20px 40px;
+}
+/* line 176, ../sass/style.scss */
+.inside-page .item-details h4 {
+  margin-bottom: 50px;
+  color: #ff5555;
+}
+/* line 181, ../sass/style.scss */
+.inside-page .item-details p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1.3px;
+}
+/* line 187, ../sass/style.scss */
+.inside-page .item-details .img-wrap {
+  float: left;
+  margin-right: 75px;
+}
+/* line 197, ../sass/style.scss */
+.inside-page .more-post ul.posts li {
+  padding: 0 15px;
+}
+/* line 200, ../sass/style.scss */
+.inside-page .more-post ul.posts li .card-content {
+  padding-top: 0;
+}
+/* line 202, ../sass/style.scss */
+.inside-page .more-post ul.posts li .card-content p {
+  width: 100%;
+  overflow: hidden;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 96px;
+  /* fallback */
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+/* line 207, ../sass/style.scss */
+.inside-page .more-post ul.posts li .card-content a {
+  margin-top: -13px;
+}
+/* line 218, ../sass/style.scss */
+.inside-page .section-title {
+  padding: 50px 0;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .page-footer {
   text-align: center;
   background-color: #ff5555 !important;
 }
-/* line 153, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .page-footer .row {
   margin-bottom: 0;
 }
-/* line 157, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .page-footer p {
   color: #fff;
   font-size: 17px;

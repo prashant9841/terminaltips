@@ -21,8 +21,13 @@
 
 			<div class="nav-header row">
 				<?php dynamic_sidebar( 'main-nav' ); ?>	
+
+				<div class="search-div">
+					<?php echo do_shortcode('[search_live]' ); ?>				
+				</div>
 				
-				<!-- <?php echo do_shortcode('[search_live]' ); ?>				 -->
 			</div>
 		</div>
 	</header>
+	<div class="page">
+		

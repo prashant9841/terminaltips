@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<section class="banner">
+	<!-- <section class="banner">
 		<div class="wrap">
 			<div class="row">
 				<div class="col s12 m9 posts">
@@ -27,18 +27,11 @@
 			            wp_reset_query();
 			        ?>
 			    </div>
-			    <div class="col s12 m3">
-			    	<div class="search">
-			    		<input type="text">
-			    		<i class="fa fa-search"></i>
-			    	</div>
-			    	
-			    </div>
+			    
 			</div>
 
 		</div>
-	</section>
-	<section class="page">
+	</section> -->
 		<div class="wrap">
 			<div class="row">
 				<div class="col s12 m9 posts">
@@ -50,18 +43,20 @@
 		            ?>
 
 						<div class="col s12 card">
-							<div class="card-image">
-								<div class="img-wrap"><img src="<?php echo $imgsrc; ?>" alt=""></div>
-					            <span class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
-				            </div>
+					        <span class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
+							<!-- <div class="card-image"> -->
+				            <!-- </div> -->
 							<div class="card-content">
+
+								<div class="row">
+									<div class="img-wrap"><img src="<?php echo $imgsrc; ?>" alt=""></div>
+									<?php the_content(); ?>
+									
+								</div>
 								
-								<?php the_content(); ?>
 								
-							</div>
-							<div class="card-action">
 				              	<a href="<?php the_permalink() ?>">Read More ...</a>
-				            </div>
+							</div>
 						</div>
 					<?php 
 		                endwhile;
@@ -91,5 +86,4 @@
 				</div>
 			</div>
 		</div>
-	</section>
 <?php get_footer(); ?>

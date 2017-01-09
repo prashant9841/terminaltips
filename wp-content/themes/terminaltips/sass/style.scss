@@ -34,16 +34,21 @@ li {
   	height: 2px;
 }
 
+.page {
+	background: #eee;
+}
+
 
 
 .page-header {
 	background: $primary-color;
-	height: 80px;
+	height: 32vh;
+
 	.logo-div {
 		float: left;
 
 		img {
-			width: 80px;
+			width: 20vh;
 		}
 
 		.nav-toggle {
@@ -75,6 +80,18 @@ li {
 	.wrap {
 		width: 80%;
 		margin: 0 auto;
+		padding-top: 3%;
+	}
+
+	.search-div {
+		width: 32%;
+		float: right;
+	}
+
+	.menu-menu-1-container {
+		display: block;
+		width: 50vw;
+		float: right;
 	}
 }
 
@@ -89,9 +106,10 @@ section.banner {
 
 
 .page {
+	padding: 50px 0;
 	.wrap {
 		width: 86%;
-		margin: 100px auto;
+		margin: auto;
 	}
 
 	.side-navs {
@@ -100,39 +118,49 @@ section.banner {
 
 			a {
 				font-size: 16px;
+				color: #5a5a5a;
+
+				&:hover {
+					color: $primary-color;
+				}
 			}
 		}
 	}
 	.posts {
 		.card {
-			padding-top: 10px;
-			.card-image {
-				a {
-					color: #fff;
-					font-size: 36px;
-					font-family: $title-font;
-				}
-
-				.img-wrap {
-					max-height: 350px;
-					overflow: hidden;
-				}
+			padding: 0;
+			// padding-top: 10px;
 				span.card-title {
-					width: 100%;
-					background: rgba(0, 0, 0, 0.5);
+					width: 100%;					
+				    display: block;
+				    padding: 25px;
+				    font-size: 32px;
+
+				    a {
+				    	color: #5a5a5a;
+				    }
 				}
-			}
 			.card-content {
+				.img-wrap {
+					width: 25%;
+					float: left;
+
+					img {
+						width: 100%;
+					}
+				}
 				p {
-					@include line-clamp(24px, 3);
+					padding-left: 20px;
+					width: 60%;
+					float: left;
+					@include line-clamp(24px, 6);
 					font-size: 17px;
 				}
-			}
-			.card-action {
 				a {
 					float: right;
 					padding-bottom: 10px;
 					color: $primary-color !important;
+					margin-top: -40px;
 				}
 			}
 		}
@@ -140,9 +168,57 @@ section.banner {
 }
 
 .inside-page {
-	.banner {
-		height: 50vh;
-		padding-top:10px; 
+	.item-details {
+		margin-top: -80px;
+		background: #fff;
+		padding: 20px 40px;
+
+		h4 {
+			margin-bottom: 50px;
+			color: $primary-color;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 30px;
+			letter-spacing: 1.3px;
+		}
+
+		.img-wrap {			
+		    float: left;
+		    margin-right: 75px;
+
+		}
+	}
+
+	.more-post {
+
+		ul.posts {
+			li {
+				padding: 0 15px;
+
+				.card-content{
+					padding-top: 0;
+					p {
+						width: 100%;
+						@include line-clamp(24px, 4);
+					}
+
+					a {
+						margin-top: -13px;
+					}
+
+				} 
+
+			}
+		}
+
+	}
+
+	.section-title {
+		padding: 50px 0;
+
+
 	}
 }
 
