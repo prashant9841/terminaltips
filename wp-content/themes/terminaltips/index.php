@@ -2,7 +2,7 @@
 
 		<div class="wrap">
 			<div class="row">
-				<div class="col s12 m9 posts">
+				<div class="col s12 l9 posts">
 
 				<!-- FEATURED FIRST -->
 					<?php           
@@ -72,7 +72,7 @@
 		            ?>
 
 				</div>
-				<div class="col s12 m3 side-navs">
+				<div class="col s12 l3 side-navs">
 			        <div class="card">
 			            <div class="card-content">
 			              	<span class="card-title">Catagories</span>

@@ -6,7 +6,7 @@
 
 		<div class="content">
 			<div class="row">
-				<div class="col s12 m9 ">
+				<div class="col s12 l9 ">
 					<div class="item-details">
 						
 						<h4><?php the_title(); ?></h4>
@@ -31,7 +31,7 @@
 			                while ( $loop->have_posts() ) : $loop->the_post();	                
 				            $imgsrc =  wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			            ?>
-							<li class="col s12 m4">
+							<li class="col s12 m6 l4">
 
 								<div class="card">
 						            <a href="<?php the_permalink() ?>">
@@ -50,7 +50,7 @@
 				</div>
 
 
-				<div class="col s12 m3 side-navs">
+				<div class="col s12 l3 side-navs">
 			        <div class="card">
 			            <div class="card-content">
 			              	<span class="card-title">Catagories</span>

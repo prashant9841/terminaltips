@@ -14,9 +14,10 @@
 				<a href="<?php echo site_url(); ?>">
 					<img src="<?php get_logo(); ?>" alt="">					
 				</a>
-				<div class="nav-toggle">
-					<i class="ti-menu"></i>
-				</div>
+			</div>
+
+			<div class="nav-toggle card hoverable">
+				<i class="fa fa-bars fa-2x"></i>
 			</div>
 
 			<div class="nav-header row">
