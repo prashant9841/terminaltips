@@ -20,11 +20,14 @@
 			</div>
 
 			<div class="nav-header row">
-				<?php dynamic_sidebar( 'main-nav' ); ?>	
-
 				<div class="search-div">
-					<?php echo do_shortcode('[search_live]' ); ?>				
+					<?php dynamic_sidebar( 'main-nav' ); ?>
+					<div class="search">
+						<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+					</div>	
+
 				</div>
+
 				
 			</div>
 		</div>

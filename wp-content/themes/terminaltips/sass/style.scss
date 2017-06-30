@@ -17,6 +17,15 @@ body {
   	left: 50%;
 }
 
+.btn {
+	background: $primary-color;
+
+	&:hover, &:active, &:focus {
+	background: $primary-color - 10;
+
+	}
+}
+
 .pace-inactive {
   	display: none;
 }
@@ -39,10 +48,27 @@ li {
 }
 
 
+.search-div {
+	.search {
+		display: none;
+		height: 0;
+
+		.probox {
+			height: 50px !important;
+			background: $primary-color !important;
+
+			input {
+				height: 50px !important;
+				color: #fff !important;
+			}
+		}
+	}
+}
+
 
 .page-header {
 	background: $primary-color;
-	height: 32vh;
+	height: 15vh;
 
 	.logo-div {
 		float: left;
@@ -66,6 +92,7 @@ li {
 					padding: 10px 15px;
 					color: #fff;
 					background: $primary-color;
+					font-size: 16px;
 
 					&:hover {
 						color: $primary-color;
@@ -80,7 +107,7 @@ li {
 	.wrap {
 		width: 80%;
 		margin: 0 auto;
-		padding-top: 3%;
+		padding-top: 1%;
 	}
 
 	.search-div {
@@ -93,6 +120,9 @@ li {
 		width: 50vw;
 		float: right;
 	}
+	.promagnifier, .prosettings {
+		display: none;
+	}
 }
 
 section.banner {
@@ -100,6 +130,10 @@ section.banner {
 		width: 86%;
 		margin: 0 auto;
 	}
+}
+
+img {
+	max-width: 100%;
 }
 
 
@@ -124,6 +158,11 @@ section.banner {
 					color: $primary-color;
 				}
 			}
+		}
+		.card-title {
+		    width: 100%;
+		    display: block;
+		    border-bottom: 1px solid #ccc;
 		}
 	}
 	.posts {
@@ -169,7 +208,6 @@ section.banner {
 
 .inside-page {
 	.item-details {
-		margin-top: -80px;
 		background: #fff;
 		padding: 20px 40px;
 
@@ -191,32 +229,31 @@ section.banner {
 		}
 	}
 
-	.more-post {
+	// pre {
+	// 	background: #5a5a5a;
+	// 	color: #fff;
+	// 	padding: 15px;
+	// }
 
-		ul.posts {
-			li {
-				padding: 0 15px;
+	
 
-				.card-content{
-					padding-top: 0;
-					p {
-						width: 100%;
-						@include line-clamp(24px, 4);
-					}
+	.related {
+		margin: 0;
+		li {
+			padding: 0 15px;
 
-					a {
-						margin-top: -13px;
-					}
+			.card-content{
+				.card-title {
+					font-size: 22px;
+					color: #5a5a5a;
+				}
+			} 
 
-				} 
-
-			}
 		}
-
 	}
 
 	.section-title {
-		padding: 50px 0;
+		padding: 25px 0 20px;
 
 
 	}
@@ -234,4 +271,13 @@ section.banner {
 		color: #fff;
 		font-size: 17px;
 	}
+}
+
+.ffwd_view_on_0 {
+	display: none;
+}
+
+.card {
+	margin-top: 0;
+	margin-bottom: 2rem;
 }
